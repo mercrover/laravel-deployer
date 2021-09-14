@@ -1,0 +1,6 @@
+/.build/
+/.idea/
+/vendor/
+/tests/fixtures/tmp/
+.phpunit.result.cache
+composer.lock
