@@ -1,16 +1,20 @@
 {
-    "name": "lorisleiva/laravel-deployer",
-    "description": "Laravel Deployer is a lightweight wrapper of Deployer giving Artisan the power of zero-downtime deployment.",
+    "name": "jeremiealvin/laravel-deployer",
+    "description": "A fork of Lorisleiva, Laravel Deployer improved to support php8 giving Artisan the power of zero-downtime deployment.",
     "type": "library",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Jeremie ALVIN",
+            "email": "contact@jeremiealvin.com"
+        },
         {
             "name": "Loris LEIVA",
             "email": "loris.leiva@gmail.com"
         }
     ],
     "require": {
-        "deployer/deployer": "^6.1",
+        "deployer/deployer": "^7.0",
         "deployer/recipes": "^6.0",
         "illuminate/support": "^6.0|^7.0|^8.0"
     },
