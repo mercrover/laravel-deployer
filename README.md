@@ -1,8 +1,11 @@
+### This is a fork of [lorisleiva/laravel-deployer](https://github.com/lorisleiva/laravel-deployer/tree/old) improved to support php 8 and deployer 7
+
 # 🚀 Laravel Deployer
 
 [![Actions Status](https://github.com/lorisleiva/laravel-deployer/workflows/Tests/badge.svg)](https://github.com/lorisleiva/laravel-deployer/actions)
 
-Laravel Deployer is a lightweight wrapper of [Deployer.org](https://github.com/deployphp/deployer) giving Artisan the power of zero-downtime deployment.
+Laravel Deployer is a lightweight wrapper of [Deployer.org](https://github.com/deployphp/deployer) giving Artisan the
+power of zero-downtime deployment.
 
 ![Console showing php artisan deploy](https://user-images.githubusercontent.com/3642397/38672390-50ad0194-3e4e-11e8-93c2-d28de8659117.png)
 
@@ -12,6 +15,7 @@ Laravel Deployer is a lightweight wrapper of [Deployer.org](https://github.com/d
 </p>
 
 ## ✨ Features
+
 * **Simple** setup process
 * **Zero downtime** deployments
 * Ready-to-use tasks for Laravel
@@ -22,10 +26,11 @@ Laravel Deployer is a lightweight wrapper of [Deployer.org](https://github.com/d
 ## 1️⃣ Installation
 
 ```bash
-composer require lorisleiva/laravel-deployer
+composer require jeremiealvin/laravel-deployer
 ```
 
 ## 2️⃣ Configuration
+
 In order to generate your deployment configuration file, simply run:
 
 ```bash
@@ -33,9 +38,11 @@ php artisan deploy:init
 ```
 
 * It will ask you a few questions to help you get started and generate a `config/deploy.php` file.
-* Read more about the available options, tasks, strategies; about how to customize your hosts, your deployment flow and much more in the [documentation](docs/README.md).
+* Read more about the available options, tasks, strategies; about how to customize your hosts, your deployment flow and
+  much more in the [documentation](docs/README.md).
 
 ## 3️⃣ Deployment
+
 When you’re ready to deploy, run:
 
 ```bash
@@ -43,8 +50,10 @@ php artisan deploy
 ```
 
 * If anything goes wrong during the deployment flow, the release will be discarded just like nothing happened.
-* Because we are using zero-downtime deployments, make sure your server’s root path points to the `{{deploy_path}}/current` symlink.
-* If your project has already been deployed, before using Laravel Deployer, you might be interested in this [first deployment strategy](docs/strategy-first-deploy.md).
+* Because we are using zero-downtime deployments, make sure your server’s root path points to
+  the `{{deploy_path}}/current` symlink.
+* If your project has already been deployed, before using Laravel Deployer, you might be interested in
+  this [first deployment strategy](docs/strategy-first-deploy.md).
 
 ## 📜 Available commands
 
