@@ -10,7 +10,6 @@
 ## 🤔 Strategies
 * [Basic strategy](strategy-basic.md)
 * [First deploy strategy](strategy-first-deploy.md)
-* [Locally-built strategy](strategy-local.md)
 * [Git pull only strategy](strategy-pull.md) (no zero-downtime)
 * [Upload strategy](strategy-upload.md)
 

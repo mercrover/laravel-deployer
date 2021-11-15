@@ -23,7 +23,6 @@ task('ld:check_strategy', function () {
 task('ld:get_start_time', function () {
     set('deploy_start_time', microtime(true));
 })
-    ->local()
     ->shallow()
     ->hidden();
 
@@ -45,7 +44,6 @@ task('success', function () {
     $timeMessage = " in $time$unit";
     writeln("$message$timeMessage");
 })
-    ->local()
     ->shallow()
     ->hidden();
 

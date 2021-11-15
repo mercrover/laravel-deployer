@@ -29,7 +29,7 @@ task('local:build', function() {
     invoke('hook:build');       // Any tasks hooked to `build` will be called locally
     invoke('deploy:symlink');
     invoke('cleanup');
-})->local();
+});
 ```
 
 * By default the local release will be built in `vendor/lorisleiva/laravel-deployer/.build`. You can change this by overriding the `local_deploy_path` option.

@@ -39,7 +39,6 @@ require 'task/yarn.php';
 
 require 'strategy/basic.php';
 require 'strategy/firstdeploy.php';
-require 'strategy/local.php';
 require 'strategy/pull.php';
 require 'strategy/upload.php';
 
