@@ -13,7 +13,6 @@ task('ld:check_strategy', function () {
         throw new \InvalidArgumentException("Strategy `$strategy` not found");
     }
 })
-    ->shallow()
     ->hidden();
 
 /**
@@ -23,7 +22,6 @@ task('ld:check_strategy', function () {
 task('ld:get_start_time', function () {
     set('deploy_start_time', microtime(true));
 })
-    ->shallow()
     ->hidden();
 
 /**
@@ -44,7 +42,6 @@ task('success', function () {
     $timeMessage = " in $time$unit";
     writeln("$message$timeMessage");
 })
-    ->shallow()
     ->hidden();
 
 /**
@@ -69,7 +66,6 @@ task('deploy:info', function () {
     }
     writeln("✈︎ Deploying $what on <fg=cyan>{{hostname}}</fg=cyan> with <info>{{strategy}}</info> strategy");
 })
-    ->shallow()
     ->hidden();
 
 /**

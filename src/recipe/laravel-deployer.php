@@ -11,7 +11,7 @@ require 'recipe/common.php';
 |
 | Provides useful additional tasks missing from the core laravel recipe
 | like first deploy cleanups, horizon commands, fpm reloading, local
-| strategy deployments, shallow hooks, npm asset building, etc.
+| strategy deployments,  npm asset building, etc.
 |
 */
 
@@ -58,7 +58,7 @@ task('deploy', function() {
     invoke('ld:check_strategy');
     invoke('deploy:info');
     invoke('strategy:' . get('strategy'));
-})->shallow();
+});
 
 // Calculate total execution time on success.
 before('deploy', 'ld:get_start_time');

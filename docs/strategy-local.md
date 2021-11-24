@@ -12,7 +12,7 @@ More information about available tasks can be found [here](all-tasks.md).
 
 ### Local:build
 
-The `local:build` task generates a release locally and uses the shallow hook `hook:build` to let you attach any necessary building tasks (like `npm:install` and `npm:production`).
+The `local:build` task generates a release locally and uses the hook `hook:build` to let you attach any necessary building tasks (like `npm:install` and `npm:production`).
 
 ```php
 task('local:build', function() {
