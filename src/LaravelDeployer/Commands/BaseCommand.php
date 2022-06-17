@@ -62,7 +62,7 @@ class BaseCommand extends Command
 
         // Delegate to DeployerPHP with the right parameters.
         $parameters = $this->getParametersAsString($this->parameters);
-        $depBinary = 'vendor' . DIRECTORY_SEPARATOR . 'bin' . DIRECTORY_SEPARATOR . 'dep';
+        $depBinary = 'vendor' . DIRECTORY_SEPARATOR . 'bin' . DIRECTORY_SEPARATOR . 'deployer.phar';
         return $this->process("$depBinary --file=$deployFile $command $parameters");
     }
 
